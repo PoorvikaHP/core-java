@@ -1,13 +1,13 @@
-class Flipkart {
+class Amazon {
 
-    public boolean login(String userName, String password) {
+    public boolean login(String userName, int OTP) {
         System.out.println("Login with username: " + userName);
 
-        String regUser = "user123";
-        String regPass = "pass@123";
+        String regUser = "amazonUser";
+        int regOTP = 8758;
 
-        if (userName != null && password != null &&
-            userName == regUser && password == regPass) {
+        if (userName != null && OTP != 0&&
+            userName == regUser && OTP == regOTP) {
             return true;
         }
         return false;
@@ -16,8 +16,8 @@ class Flipkart {
     public String login(String email, String password, String confirmPassword) {
         System.out.println("Login with email: " + email);
 
-        String regEmail = "user@gmail.com";
-        String regPass = "pass@123";
+        String regEmail = "amazon@gmail.com";
+        String regPass = "amazon@123";
 
         if (email != null && password != null &&
             email == regEmail &&
@@ -29,50 +29,47 @@ class Flipkart {
     }
 
     public String searchProduct(String productName) {
-        System.out.println("Searching by product name: " + productName);
+        System.out.println("Searching product: " + productName);
 
         if (productName != null) {
             return "Product found: " + productName;
         }
-        return "Product not found";
+        return "Not found";
     }
 
     public String searchProduct(String productName, String brand) {
-        System.out.println("Searching by product: " + productName + " brand: " + brand);
+        System.out.println("Searching product: " + productName + " brand: " + brand);
 
         if (productName != null && brand != null) {
-            return "Product: " + productName + " Brand: " + brand;
+            return productName + " " + brand;
         }
-        return "Invalid search";
+        return "Invalid";
     }
 
     public String searchProduct(String productName, double price) {
-        System.out.println("Searching by product: " + productName + " under price: " + price);
+        System.out.println("Searching under price: " + price);
 
         if (productName != null) {
-            return "Product: " + productName + " under price: " + price;
+            return productName + " under " + price;
         }
-        return "Invalid search";
+        return "Invalid";
     }
 
     public String searchProductByCategory(String category) {
         System.out.println("Searching category: " + category);
 
         if (category != null) {
-            return "Category found: " + category;
+            return "Category: " + category;
         }
-        return "Category not found";
+        return "Invalid";
     }
 
     public String searchProduct(String productName, String brand, int rating) {
-        System.out.println("Searching product: " + productName + 
-                           " brand: " + brand + " rating: " + rating);
+        System.out.println("Searching product: " + productName + " brand: " + brand + " rating: " + rating);
 
         if (productName != null && brand != null) {
-            return "Product: " + productName + 
-                   " Brand: " + brand + 
-                   " Rating: " + rating;
+            return productName + " " + brand + " rating " + rating;
         }
-        return "Invalid search";
+        return "Invalid";
     }
 }
