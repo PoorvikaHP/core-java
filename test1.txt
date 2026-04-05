@@ -1,0 +1,47 @@
+1.what is java?
+-java is an high level,interpreted,open-source and object oriented programming language.
+
+2.Expalin how java file will execute?
+-file is saved in .java extension.
+-opening the cmd and compiling the file using javac filename.java 
+-JVM helps in compiling the code.
+-after compilation error free code will execute usiing java filename command.
+
+3.what is data type?and expalin types of data type.
+-data type is used to know what type of data is stored inside the variable.
+-there two types 
+1.primitive data types-this data type stores single values in the memory directly.
+-primitive datatypes are-int,char,float,double,boolean,long,short,byte.
+-int datatype stores the numerical values like 4,97 etc.
+-char datatype stores the characters within single quotes.ex-'a'.
+-float datatype stores the numerical value with decimal points.ex-9.23f.
+-double datatype stores the double the values of float with decimal points.ex-90.766.
+-boolean datatype stores whether the condition is true or false.
+2.non-primitive data types-this datatype stores the complex values.
+-class,interface,object,array are non-primitive datatypes.
+
+4.what is variable?explain types of variable.
+-variables are the container to store the data values.
+-there are 4types of variables in java
+-static variable:variable declared inside the class but outside the method using static keyword.
+-instance variable:declared outside the method and inside the class without static keyword.it is opposite of static variable hence called as non-satatic variable.
+-local variable:declared anywhere inside the method of a class.
+-parameterized variable:declared inside the parameter of the method,hence called as parameterized variable.
+
+5.what is array?
+-array is a collection of elements with same datatype.or collection of homogenous elements.
+-it is declared as datatype array_name[]=values;
+
+6.what is method?explain types of method.
+-method is a block of statements which performs specific task to increase code readability and reuseability.
+-there are inbuilt and user defined methods.
+-there are 4 types of methods in inbuilt static method they are:
+1.method with no return type and no parameter.
+2.method with no return type and with parameter.
+3.method with return type and no parameter.
+4.method with return type and with parameter.
+
+7.what is constructor?
+-constructor is a special type of method which created when object is called with same name as class name.
+ex:access_specifier classname()
+
